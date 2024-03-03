@@ -1,6 +1,7 @@
 # voter-container
 
 [![Docker Image CI](https://github.com/abhi2687/voter-api/actions/workflows/docker-image.yml/badge.svg)](https://github.com/abhi2687/voter-api/actions/workflows/docker-image.yml)
+[![Docker](https://github.com/abhi2687/voter-api/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/abhi2687/voter-api/actions/workflows/docker-publish.yml)
 
 Voter API is containerized, to use container version of voter api follow below steps
 1. Clone repo

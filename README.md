@@ -3,6 +3,7 @@ Perform CURD operation on voters and polls using voter API.
 
 [![Go](https://github.com/abhi2687/voter-api/actions/workflows/go.yml/badge.svg?branch=main)](https://github.com/abhi2687/voter-api/actions/workflows/go.yml)
 [![Docker Image CI](https://github.com/abhi2687/voter-api/actions/workflows/docker-image.yml/badge.svg)](https://github.com/abhi2687/voter-api/actions/workflows/docker-image.yml)
+[![Docker](https://github.com/abhi2687/voter-api/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/abhi2687/voter-api/actions/workflows/docker-publish.yml)
 
 # Code Coverage
 
