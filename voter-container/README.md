@@ -1,2 +1,6 @@
-# voter-api
-Voter API
+# voter-container
+Voter API is containerized, to use container version of voter api follow below steps
+1. Clone repo
+2. Install docker, docker compose
+3. Run docker-compose up
+4. Test API by running API calls from ([API calls.rest](https://github.com/abhi2687/voter-api/blob/main/API%20calls.rest)) file
