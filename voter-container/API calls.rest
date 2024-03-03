@@ -1,0 +1,160 @@
+POST http://localhost:1080/voters
+Content-Type: application/json
+
+{
+    "voterId": 1,
+    "name": "Jon Doe",
+    "email": "jondoe@gmail.com",
+    "voteHistory": [
+        {
+            "pollId": 101,
+            "voteId": 5,
+            "voteDate": "2024-01-01T00:00:00Z"
+        },
+        {
+            "pollId": 102,
+            "voteId": 6,
+            "voteDate": "2024-02-01T00:00:00Z"
+        }
+    ]
+}
+
+###
+POST http://localhost:1080/voters
+Content-Type: application/json
+
+{
+    "voterId": 2,
+    "name": "Jon2 Doe2",
+    "email": "jon2doe2@gmail.com",
+    "voteHistory": [
+        {
+            "pollId": 101,
+            "voteId": 6,
+            "voteDate": "2024-01-01T00:00:00Z"
+        },
+        {
+            "pollId": 102,
+            "voteId": 7,
+            "voteDate": "2024-02-01T00:00:00Z"
+        }
+    ]
+}
+
+###
+
+POST http://localhost:1080/voters
+Content-Type: application/json
+
+{
+    "voterId": 3,
+    "name": "Jon3 Doe3",
+    "email": "jon3doe3@gmail.com"
+}
+
+###
+POST http://localhost:1080/voters/3/polls
+Content-Type: application/json
+
+{
+    "pollId": 101,
+    "voteId": 7,
+    "voteDate": "2024-01-01T00:00:00Z"
+}
+
+###
+POST http://localhost:1080/voters/3/polls
+Content-Type: application/json
+
+{
+    "pollId": 102,
+    "voteId": 8,
+    "voteDate": "2024-02-01T00:00:00Z"
+}
+
+###
+PUT http://localhost:1080/voters/3
+Content-Type: application/json
+
+{
+    "voterId": 3,
+    "name": "Jon Doe UPDATED",
+    "email": "jondoeupdated@gmail.com"
+}
+
+###
+
+POST http://localhost:1080/voters
+Content-Type: application/json
+
+{
+    "voterId": 4,
+    "name": "Jon4 Doe4",
+    "email": "jon4doe4@gmail.com"
+}
+
+###
+POST http://localhost:1080/voters/4/polls
+Content-Type: application/json
+
+{
+    "pollId": 101,
+    "voteId": 8,
+    "voteDate": "2024-01-01T00:00:00Z"
+}
+
+###
+POST http://localhost:1080/voters/4/polls
+Content-Type: application/json
+
+{
+    "pollId": 102,
+    "voteId": 9,
+    "voteDate": "2024-02-01T00:00:00Z"
+}
+
+###
+GET http://localhost:1080/voters/health
+
+###
+GET http://localhost:1080/voters/1
+
+###
+GET http://localhost:1080/voters/2
+
+###
+GET http://localhost:1080/voters/3
+
+###
+GET http://localhost:1080/voters/4
+
+###
+GET http://localhost:1080/voters
+
+###
+GET http://localhost:1080/voters/1/polls/102
+
+###
+PUT http://localhost:1080/voters/1/polls/0
+Content-Type: application/json
+
+{
+    "pollId": 0,
+    "voteId": 10,
+    "voteDate": "2024-03-01T00:00:00Z"
+}
+
+###
+DELETE http://localhost:1080/voters/1/polls/102
+
+###
+PUT http://localhost:1080/voters/1
+Content-Type: application/json
+
+{
+    "name": "Jon Doe UPDATED3",
+    "email": "jondoeupdated3@gmail.com"
+}
+###
+DELETE http://localhost:1080/voters/1
+
